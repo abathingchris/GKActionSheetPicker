@@ -84,6 +84,8 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 
 #pragma mark - Control
 
+@property (nonatomic, strong) NSArray *components;
+
 //! Array of selected values for each row respectively. Values are either `value` properties of `GKActionSheetPickerItem` objects or strings.
 @property (nonatomic, readonly) NSArray *selections;
 
@@ -98,6 +100,7 @@ typedef NS_ENUM(NSUInteger, GKActionSheetPickerDismissType) {
 
 //! Picker's delegate object
 @property (nonatomic, strong) id<GKActionSheetPickerDelegate> delegate;
+
 
 #pragma mark - String Picker
 
